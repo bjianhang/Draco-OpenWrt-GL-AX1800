@@ -16,15 +16,15 @@ feeds:
   - name: kenzok8_packages
     uri: https://github.com/kenzok8/openwrt-packages.git
     branch: master
-    revision: 7a170d1283329764514e960f89bead2c4e054101
+    revision: 24a5a38799ca481fb40473881bece396bdfbc837
   - name: immortalwrt_luci
     uri: https://github.com/immortalwrt/luci.git
     branch: openwrt-21.02
-    revision: 60ab741c0da35c9b2781baeb4d133475e637eeb1
-  - name: kiddin9
-    uri: https://github.com/kiddin9/openwrt-packages.git
-    branch: master
-    revision: ba42a9a25b915bbceb2c8a05ee9552ed9b47ab34
+    revision: a0d1ff9b19bf1dede8123c68ca4eae82c3d2da84
+  - name: small_package
+    uri: https://github.com/kenzok8/small-package.git
+    branch: main
+    revision: 58c1fd5039e37b978025ae848bee4feca2bac032
 include:
   - wifi-ax
 packages:
@@ -41,10 +41,7 @@ packages:
   - luci-app-zerotier
   - luci-app-turboacc
   - luci-app-xlnetacc
-  - luci-app-appfilter
   - luci-app-cpufreq
   - luci-app-ttyd
-  - luci-app-passwall
-  - luci-app-ssr-plus
   - luci-app-serverchan
   - luci-app-transmission
