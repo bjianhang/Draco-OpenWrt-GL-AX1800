@@ -5,31 +5,35 @@ subtarget: ipq60xx
 description: Build image for the GL.iNET AXT1800
 image: bin/targets/ipq807x/ipq60xx/openwrt-ipq807x-glinet_axt1800-squashfs-sysupgrade.tar
 feeds:
+  - name: gl_feeds_wlanap
+    uri: https://github.com/gl-inet/gl-feeds.git
+    revision: 5df1bae20bf4f2bd39168707e6363bcf8bdf5f29
   - name: ipq807x
     path: ../../feeds/ipq807x
   - name: wifi_ax
     path: ../../feeds/wifi-ax
   - name: gl_feeds_common
     uri: https://github.com/gl-inet/gl-feeds.git
-    revision: 7a2b21a2fe6d5b8a3b15009ca544b8a0f7fc2e1d
+    revision: 16d4e89ddfc13ab8551959c3c17dfe7699c709bf
   - name: luci
     uri: https://github.com/openwrt/luci.git
     revision: 1c3b32dc1bec15e3076a447762b1c4f94eb75fb7
   - name: kenzok8_packages
     uri: https://github.com/kenzok8/openwrt-packages.git
     branch: master
-    revision: 06bd14f7f1c615b6dd92c504a9f97deeea17cbc1
+    revision: aca8ef531dd68745297e169a51dd087ebacaab47
   - name: immortalwrt_luci
     uri: https://github.com/immortalwrt/luci.git
     branch: openwrt-21.02
-    revision: e2aafdbd37f814114e4aa9cfa35a0e9d89a2f195
+    revision: 2762b0374f475771d44692caaeb95884979cf5a9
   - name: small_package
     uri: https://github.com/kenzok8/small-package.git
     branch: main
-    revision: 48cc68d965e8421ce37162d8929a0b47ade48cf5
+    revision: 6df2e0b6fcb43aa3566410371a240c1f49ee9512
 include: []
 packages:
   - kmod-hwmon-pwmfan
+  - kmod-gl-sdk4-fan
   - wireless-regdb
   - wget-ssl
   - kmod-wireguard-backport
