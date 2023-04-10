@@ -37,7 +37,7 @@ env:
   UPLOAD_WETRANSFER: true
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
-  OFFICIAL: true
+  OFFICIAL: ${official}
 
 jobs:
   build:
